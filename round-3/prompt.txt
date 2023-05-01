@@ -1,0 +1,1 @@
+Create an angular app that takes in any json file and creates a form to edit the values of the josn properties. If the json file has nested objects, create form fields for them too and indent them in the html file. The html should be styled. The form values must be sent to an API on submit. 
