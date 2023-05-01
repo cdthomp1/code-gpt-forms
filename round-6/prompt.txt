@@ -1,0 +1,2 @@
+
+Create for me an angular app that can take in arbitrary JSON and convert it to a reactive form and save the data to an API call. Add some validation to the form. The form inputs should be placed on the left side of the page and the form outputs should be displayed on the right side of the page. Add some styles to make the form and the outputs look nice. 
