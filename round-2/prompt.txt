@@ -1,0 +1,24 @@
+Create for me an angular app that takes in a json file as configuration to create a contact form. Here is the json file: 
+{
+    "form-name": "Simple Contact Form",
+    "form-fields": [{
+        "field-name": "First Name",
+        "field-type": "text"
+    },
+    {
+        "field-name": "Last Name",
+        "field-type": "text"
+    },{
+        "field-name": "Email",
+        "field-type": "email"
+    },
+    {
+        "field-name": "Phone Number",
+        "field-type": "tel"
+    },
+    {
+        "field-name": "Comments",
+        "field-type": "textarea"
+    }]
+}
+Use the array of form fields to create the different form elements. Display the input of the form on the right of the form. the form should have validation. The form should be a reactive form. The data from the form should be sent to an api. Style the form to have the form on the left of the page and the output of the form on the right of the page
