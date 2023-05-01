@@ -1,0 +1,23 @@
+{
+  "form-name": "Simple Contact Form",
+  "form-fields": [{
+      "field-name": "First Name",
+      "field-type": "text"
+    },
+    {
+      "field-name": "Last Name",
+      "field-type": "text"
+    }, {
+      "field-name": "Email",
+      "field-type": "email"
+    },
+    {
+      "field-name": "Phone Number",
+      "field-type": "tel"
+    },
+    {
+      "field-name": "Comments",
+      "field-type": "textarea"
+    }
+  ]
+}

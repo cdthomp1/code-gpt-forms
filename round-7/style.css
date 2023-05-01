@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.form legend {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.form input[type="text"].invalid {
+    border-color: red;
+}
+
+.output {
+    width: calc(50% - 1rem);
+    margin-left: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}

@@ -1,0 +1,50 @@
+label,
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4caf50;
+    color: white;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+#form {
+    width: 45%;
+}
+
+#output {
+    width: 45%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.indent {
+    margin-left: 20px;
+}

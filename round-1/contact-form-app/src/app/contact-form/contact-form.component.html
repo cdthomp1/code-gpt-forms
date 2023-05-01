@@ -1,0 +1,23 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div *ngFor="let field of config['form-fields']">
+    <label>{{ field['field-name'] }}</label>
+    <input [type]="field['field-type']" [formControlName]="field['field-name']">
+    <div
+      *ngIf="contactForm.get(field['field-name'])?.invalid && (contactForm.get(field['field-name'])?.dirty || contactForm.get(field['field-name'])?.touched)">
+
+      <div *ngIf="contactForm.get(field['field-name'])?.errors?.['required']">
+
+        {{ field['field-name'] }} is required.
+      </div>
+      <div *ngIf="contactForm.get(field['field-name'])?.errors?.['required']">
+
+        Please enter a valid email address.
+      </div>
+      <div *ngIf="contactForm.get(field['field-name'])?.errors?.['required']">
+
+        Please enter a 10-digit phone number.
+      </div>
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
