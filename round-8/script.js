@@ -74,23 +74,26 @@ submitButton.addEventListener('click', () => {
 
             // make an API call to save the form data
             // replace "http://example.com/api" with the URL of your API
-            fetch('http://example.com/api', {
-                method: 'POST',
-                body: JSON.stringify(formData),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-                .then(response => response.json())
-                .then(data => {
-                    // display the response data in the output div
-                    output.textContent = JSON.stringify(data, null, 2);
-                })
-                .catch(error => {
-                    // display the error message in the output div
-                    output.textContent = `Error: ${error.message}`;
-                });
+            // fetch('http://example.com/api', {
+            //     method: 'POST',
+            //     body: JSON.stringify(formData),
+            //     headers: {
+            //         'Content-Type': 'application/json'
+            //     }
+            // })
+            //     .then(response => response.json())
+            //     .then(data => {
+            //         // display the response data in the output div
+            //         output.textContent = JSON.stringify(data, null, 2);
+            //     })
+            //     .catch(error => {
+            //         // display the error message in the output div
+            //         output.textContent = `Error: ${error.message}`;
+            //     });
+
+            output.textContent = JSON.stringify(data, null, 2);
         });
+
     });
 
     // read the file as text
